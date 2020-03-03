@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tickets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+    <body class="is-preload"> 
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade=in">
+
+				<!-- Intro -->
+					<div id="main">
+						<h1>Please Enter Ticket Details</h1>
+						<p>All fields must be filled</p>
+						<form name="ticketInput" action="" method="POST">
+								<label for="projectName">Project Name</label><br>
+								<input type="text" id="projectName" name="projectName" value=""> <br>
+								
+								<label for="department">Department Name</label><br>
+								<input type="text" id="department" name="department" value=""> <br>
+								
+								<label for="requestor">Requested By</label>
+								<select id="requestor"></select> <br>
+								
+								<label for="description">Problem Description</label><br>
+								<textarea id="description" name="description" value="" rows="5" cols="50" style="resize:none"></textarea><br><br>
+								
+								<button type="button" onclick="validateForm()">Submit</button>
+						</form>
+
+
+
+
+
+					</div>
+
+
+
+			</div>
+		
+
+    </body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/namebydepartment.js"></script>
+	<script src="assets/js/formValidation.js"></script>
+	<script src="assets/js/createTickets.js"></script>
+</html>
